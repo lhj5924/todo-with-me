@@ -7,10 +7,28 @@ import TodoPage from './pages/TodoPage';
 import TimerPage from './pages/TimerPage';
 import QuotePage from './pages/QuotePage';
 import MadeByPage from './pages/MadeByPage';
+import GlobalStyle from './GlobalStyle';
+import ReactDOM from 'react-dom';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import styled from 'styled-components';
 
+library.add(fas)
+
+const Container = styled.main`
+min-width: 200px;
+max-width: 500px;
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: stretch;
+`
 
 function App() {
   return (
+    <>
+      <GlobalStyle />
+      <Container>
         <Router>
           <Nav />
         <Routes>
@@ -21,6 +39,8 @@ function App() {
           <Route path="/madeby" element={<MadeByPage />} />
         </Routes>
       </Router>
+      </Container>
+    </>
   );
 }
 
