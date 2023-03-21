@@ -37,7 +37,7 @@ function Nav() {
         Todo With Me :)
       </StyledTitle>
       <StyledNavIconContainer id="menu">
-        <Link to="/login">
+        <Link to="/">
           <StyledPageBtn title='로그인 페이지'>
             <FontAwesomeIcon icon="fa-solid fa-arrow-right-to-bracket" />
             </StyledPageBtn></Link>

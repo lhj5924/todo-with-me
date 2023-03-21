@@ -1,5 +1,12 @@
 import { React } from 'react';
+import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // 휴지통 아이콘 넣기
+
+const StyledDeleteBtn = styled.button`
+background-color: transparent;
+color: red;
+`
 
 function DeleteBtn ({todo, onClick}) {
 
@@ -10,10 +17,11 @@ function DeleteBtn ({todo, onClick}) {
 
   return (
       <span>
-          <button 
+          <StyledDeleteBtn 
           onClick={handleOnClick}
-          >X
-          </button>
+          >
+            <FontAwesomeIcon icon="fa-solid fa-trash-can" />
+          </StyledDeleteBtn>
       </span>
   )
 }

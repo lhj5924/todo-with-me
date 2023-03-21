@@ -56,7 +56,7 @@ const handleKeyDown = (event) => {
           {todo.content}
           {onMouseEnter
             ? <DeleteBtn todo={todo} onClick={onRemove}/>   
-            : null
+            : <span></span>
             }
       </TodoBox>
     </>

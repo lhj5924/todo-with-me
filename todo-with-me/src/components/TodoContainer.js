@@ -18,9 +18,9 @@ background-color: transparent;
 font-size: 2rem;
 `
 const StyledTodoLi = styled.li`
-display: flex;
-justify-content: flex-start;
-align-items: center;
+display: grid;
+grid-template-columns: 3rem 1fr 3rem;
+margin: 0 2rem;
 `
 
 function TodoContainer () {
@@ -59,7 +59,8 @@ function TodoContainer () {
                 <>
                     <StyledTodoLi key={todo.id}>
                         <Todo todo={todo}
-                        onRemove={onRemove}/>
+                        onRemove={onRemove}
+                        />
                     </StyledTodoLi>
                 </>
                 )}

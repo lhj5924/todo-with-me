@@ -29,7 +29,7 @@ export default function Timer() {
 
   return(
     <>
-    <div>25분 동안 할일을 끝내보세요!</div>
+    <div>25분 동안 중요한 할일을 끝내보세요!</div>
     <div>{min}:{sec}</div>
     </>
   )

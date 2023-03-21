@@ -16,8 +16,7 @@ import styled from 'styled-components';
 library.add(fas)
 
 const Container = styled.main`
-min-width: 200px;
-max-width: 500px;
+width: 500px;
 height: 100vh;
 display: flex;
 flex-direction: column;
@@ -32,7 +31,7 @@ function App() {
         <Router>
           <Nav />
         <Routes>
-          <Route path="/login" element={<LoginPage />} />
+          <Route path="/" element={<LoginPage />} />
           <Route path="/todo" element={<TodoPage />} />
           <Route path="/timer" element={<TimerPage />} />
           <Route path="/quote" element={<QuotePage />} />

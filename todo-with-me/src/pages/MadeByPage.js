@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import nagi from '../img/nagi.png'
+// import nagi from 'img/nagi.png' // ==> public 에 있는 이미지는 import 하지 않고 바로 불러와도 됨!!(l#26) // thx to 진하님!!!
 
 const StyledMadeByContainer = styled.main`
 width: 100%;
@@ -23,7 +23,7 @@ export default function MadeByPage() {
   return (
     <>
     <StyledMadeByContainer>
-      <StyledImg src={nagi}></StyledImg>
+      <StyledImg src={require('../img/nagi.png')}></StyledImg>
       <StyledContact>
         <div>HyunJin</div>
         <div>gitHub : lhj5924</div>
